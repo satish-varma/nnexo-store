@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        "data/*",
+        "mobile/*",
+        "web/*"
+    ],
+    "ext": "js,json"
+}

@@ -1,0 +1,181 @@
+[
+  {
+    "_id": "p1",
+    "name": "Yonex Astrox 88D Pro",
+    "sku": "Y-AX88D-P",
+    "category": "rackets",
+    "basePrice": 16999,
+    "salePrice": 14449,
+    "images": [
+      "/racket.png"
+    ],
+    "attributes": {
+      "racket": {
+        "weight": "4U",
+        "balance": "Head Heavy",
+        "tension": "28lbs"
+      }
+    }
+  },
+  {
+    "_id": "p2",
+    "name": "Lining Saga II Shoes",
+    "sku": "LN-SAG-2",
+    "category": "shoes",
+    "basePrice": 6999,
+    "salePrice": 5899,
+    "images": [
+      "/shoes_v1.png"
+    ],
+    "attributes": {
+      "shoes": {
+        "sole": "Gum Sole",
+        "cushion": "Power Cushion"
+      }
+    }
+  },
+  {
+    "_id": "p3",
+    "name": "NNEXO Carbon Pro Tee",
+    "sku": "NX-CPT-01",
+    "category": "apparel",
+    "basePrice": 2499,
+    "salePrice": 1999,
+    "images": [
+      "/tee_v1.png"
+    ],
+    "attributes": {
+      "apparel": {
+        "fabric": "Ultra-Dry Mesh",
+        "fit": "Athletic",
+        "gender": "Unisex"
+      }
+    }
+  },
+  {
+    "_id": "p4",
+    "name": "NNEXO Elite Aero Shorts",
+    "sku": "NX-EAS-01",
+    "category": "apparel",
+    "basePrice": 1899,
+    "salePrice": 1499,
+    "images": [
+      "/shorts_v1.png"
+    ],
+    "attributes": {
+      "apparel": {
+        "fabric": "Stretch-Tech",
+        "fit": "Slim",
+        "gender": "Unisex"
+      }
+    }
+  },
+  {
+    "_id": "p5",
+    "name": "NNEXO Team Warm-Up Suit",
+    "sku": "NX-TWS-01",
+    "category": "apparel",
+    "basePrice": 5999,
+    "salePrice": 4999,
+    "images": [
+      "/tee_v1.png"
+    ],
+    "attributes": {
+      "apparel": {
+        "fabric": "Thermal-Lite",
+        "fit": "Regular",
+        "gender": "Unisex"
+      }
+    }
+  },
+  {
+    "_id": "p6",
+    "name": "NNEXO Tech Mesh Tank",
+    "sku": "NX-TMT-01",
+    "category": "apparel",
+    "basePrice": 1599,
+    "salePrice": 1249,
+    "images": [
+      "/tee_v1.png"
+    ],
+    "attributes": {
+      "apparel": {
+        "fabric": "Aero-Knit",
+        "fit": "Relaxed",
+        "gender": "Unisex"
+      }
+    }
+  },
+  {
+    "_id": "p7",
+    "name": "NNEXO Aero-Flow Pro Jersey",
+    "sku": "NX-AFP-01",
+    "category": "apparel",
+    "basePrice": 2999,
+    "salePrice": 2499,
+    "images": [
+      "/tee_v1.png"
+    ],
+    "attributes": {
+      "apparel": {
+        "fabric": "Aero-Flow",
+        "fit": "Pro",
+        "gender": "Men"
+      }
+    }
+  },
+  {
+    "_id": "p8",
+    "name": "NNEXO Speed-Lite Shorts",
+    "sku": "NX-SLS-01",
+    "category": "apparel",
+    "basePrice": 1599,
+    "salePrice": 1199,
+    "images": [
+      "/shorts_v1.png"
+    ],
+    "attributes": {
+      "apparel": {
+        "fabric": "Light-Stretch",
+        "fit": "Speed",
+        "gender": "Unisex"
+      }
+    }
+  },
+  {
+    "_id": "p9",
+    "name": "NNEXO Compression Pro Shorts",
+    "sku": "NX-CPS-01",
+    "category": "apparel",
+    "basePrice": 2199,
+    "salePrice": 1799,
+    "images": [
+      "/shorts_v1.png"
+    ],
+    "attributes": {
+      "apparel": {
+        "fabric": "Comp-Tech",
+        "fit": "Tight",
+        "gender": "Unisex"
+      }
+    }
+  },
+  {
+    "_id": "p10",
+    "name": "NNEXO Performance Training Tee",
+    "sku": "NX-PTT-01",
+    "category": "apparel",
+    "basePrice": 1799,
+    "salePrice": 1399,
+    "images": [
+      "/tee_v1.png"
+    ],
+    "attributes": {
+      "apparel": {
+        "fabric": "Dry-Touch",
+        "fit": "Active",
+        "gender": "Unisex"
+      }
+    }
+  }
+]

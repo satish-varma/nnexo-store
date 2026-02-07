@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "177047723416440zme",
+    "createdAt": "2026-02-07T15:13:54.164Z",
+    "name": "Test User",
+    "email": "test@nnexo.com",
+    "phoneNumber": "9876543210",
+    "password": "$2b$10$Xn1iBAV/L7pOTqoN7EUEgOjv8dbGonLr5gi0r5Bx4FQ8EifqU6L4O",
+    "role": "Admin",
+    "isActive": true
+  }
+]
