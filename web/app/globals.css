@@ -554,6 +554,14 @@ h4 {
   color: var(--text) !important;
 }
 
+/* Fix Hero Gradient Text visibility in Light Theme */
+[data-theme="light"] h1 span {
+  background: linear-gradient(135deg, #E11D48 0%, #881337 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
 [data-theme="light"] .p-price {
   color: var(--text) !important;
 }
