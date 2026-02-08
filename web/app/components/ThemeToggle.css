@@ -1,0 +1,69 @@
+.theme-toggle {
+    position: relative;
+    background: transparent;
+    border: 2px solid var(--border);
+    border-radius: 50px;
+    padding: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    border-color: var(--primary);
+    transform: scale(1.05);
+}
+
+.toggle-track {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background: var(--surface);
+    border-radius: 50px;
+    padding: 3px;
+    transition: background-color 0.3s ease;
+}
+
+[data-theme="light"] .toggle-track {
+    background: var(--surface-elevated);
+}
+
+.toggle-thumb {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, var(--primary) 0%, #dc2626 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.toggle-thumb.dark {
+    transform: translateX(3px);
+}
+
+.toggle-thumb.light {
+    transform: translateX(33px);
+}
+
+/* Hover effect */
+.theme-toggle:hover .toggle-thumb {
+    box-shadow: 0 4px 12px var(--primary);
+}
+
+/* Focus state for accessibility */
+.theme-toggle:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.2);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}

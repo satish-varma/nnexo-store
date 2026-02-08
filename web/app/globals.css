@@ -1,15 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap');
 
-:root {
+/* Dark Theme (Default) */
+:root,
+[data-theme="dark"] {
   --primary: #E11D48;
+  --primary-hover: #BE123C;
   --bg: #020617;
   --bg-dark: #010410;
   --surface: #0f172a;
+  --surface-elevated: #1e293b;
   --glass: rgba(15, 23, 42, 0.95);
   --border: rgba(255, 255, 255, 0.1);
   --text: #ffffff;
+  --text-secondary: #e2e8f0;
   --text-dim: #94a3b8;
+  --shadow: rgba(0, 0, 0, 0.4);
   --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --hero-overlay: linear-gradient(rgba(2, 6, 23, 0.6), rgba(2, 6, 23, 0.8));
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --primary: #E11D48;
+  --primary-hover: #BE123C;
+  --bg: #f8fafc;
+  --bg-dark: #ffffff;
+  --surface: #ffffff;
+  --surface-elevated: #f1f5f9;
+  --glass: rgba(255, 255, 255, 0.95);
+  --border: rgba(0, 0, 0, 0.1);
+  --text: #0f172a;
+  --text-secondary: #334155;
+  --text-dim: #64748b;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --hero-overlay: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9));
 }
 
 * {
@@ -20,7 +45,7 @@
 
 body {
   background-color: var(--bg);
-  background-image: linear-gradient(rgba(2, 6, 23, 0.6), rgba(2, 6, 23, 0.8)), url('/hero_final.png');
+  background-image: var(--hero-overlay), url('/hero_final.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -29,6 +54,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Layout Mastery */
