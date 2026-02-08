@@ -13,6 +13,16 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('nnexo-theme') || 'dark';
+                document.documentElement.setAttribute('data-theme', theme);
+              } catch (e) {}
+            `,
+          }}
+        />
       </head>
       <body>
         <ClientLayout>

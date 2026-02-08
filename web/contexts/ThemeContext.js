@@ -8,23 +8,27 @@ const ThemeContext = createContext({
 });
 
 export function ThemeProvider({ children }) {
-    const [theme, setTheme] = useState('dark');
+    // Initialize from document attribute to avoid hydration mismatch
+    const [theme, setTheme] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return document.documentElement.getAttribute('data-theme') || 'dark';
+        }
+        return 'dark';
+    });
     const [mounted, setMounted] = useState(false);
 
-    // Load theme from localStorage on mount
     useEffect(() => {
         setMounted(true);
-        const savedTheme = localStorage.getItem('nnexo-theme') || 'dark';
-        setTheme(savedTheme);
-        document.documentElement.setAttribute('data-theme', savedTheme);
     }, []);
 
     // Toggle theme
     const toggleTheme = () => {
         const newTheme = theme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
-        localStorage.setItem('nnexo-theme', newTheme);
-        document.documentElement.setAttribute('data-theme', newTheme);
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('nnexo-theme', newTheme);
+            document.documentElement.setAttribute('data-theme', newTheme);
+        }
     };
 
     return (
