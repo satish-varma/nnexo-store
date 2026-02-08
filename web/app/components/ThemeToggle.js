@@ -4,10 +4,10 @@ import { useTheme } from '@/contexts/ThemeContext';
 import './ThemeToggle.css';
 
 export default function ThemeToggle() {
-    const { theme, toggleTheme } = useTheme();
+    const { theme, toggleTheme, mounted } = useTheme();
 
-    // Prevent rendering during server-side rendering to avoid hydration mismatch
-    if (typeof window === 'undefined') {
+    // Don't render until mounted to avoid hydration mismatch
+    if (!mounted) {
         return (
             <div className="theme-toggle-placeholder" style={{ width: '60px', height: '30px' }} />
         );
