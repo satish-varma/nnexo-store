@@ -17,7 +17,7 @@ export default function AcademyPage() {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.4 }}
                     >
                         <div className="inline-flex items-center gap-2 text-primary bg-primary/10 px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-[0.2em] border border-primary/25 mb-8">
                             <Trophy size={14} />

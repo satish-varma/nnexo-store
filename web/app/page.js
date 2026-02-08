@@ -39,7 +39,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
             style={{ maxWidth: '700px' }}
           >
             <div className="pro-badge">
@@ -103,7 +103,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.1, duration: 1 }}
+              transition={{ delay: idx * 0.05, duration: 0.5 }}
               className="product-card group relative"
             >
               <Link href={`/product/${product._id}`} className="block">
