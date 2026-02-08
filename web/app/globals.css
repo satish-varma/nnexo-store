@@ -625,7 +625,7 @@ h4 {
 
 /* Clean Professional Header Section */
 [data-theme="light"] section[style*="minHeight"] {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+  background: transparent !important;
 }
 
 /* Dark Text for Light Backgrounds */
